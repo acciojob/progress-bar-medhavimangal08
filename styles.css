@@ -1,1 +1,50 @@
 /*  your css code here. If applicable */
+body{
+	width:400px;
+	
+}
+.container{
+	display:flex;
+	justify-content:space-around;
+}
+
+
+button{
+	margin-left:100px;
+}
+.circle{
+	font-size:25px;
+	border-radius:50%;
+	border:2px solid grey;
+	position:relative;
+}
+.circle::after {
+  content: "";
+  position:absolute;
+  height: 4px;
+  width: 66px; /* Line width connecting circles */
+  background-color: #ddd; /* Gray color for the line */
+  top:13px;
+  left:47px;
+  transform: translateX(-50%);
+}
+.circle:last-child::after {
+	content: none; /* Removes line after last circle */
+}
+
+button{
+	background-color:blue;
+	border-radius:3px;
+	width:70px;
+	height:30px;
+}
+.active{
+	border-color:blue;
+}
+.circle.active::after{
+	background-color:blue;
+}
+
+
+
+
