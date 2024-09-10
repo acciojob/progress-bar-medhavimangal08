@@ -1,13 +1,15 @@
 //your JS code here. If required.
 
 const circles = document.querySelectorAll('.circle');
-const btn=document.querySelector("button");
+const btn=document.querySelectorAll("button");
 const nextbtn=document.querySelector("#next");
 const prevbtn=document.querySelector("#prev");
 
 prevbtn.disabled=true;
 let classactive=0;
-btn.addEventListener("click", classmodify)
+for(let i of btn){
+	i.addEventListener("click", classmodify)
+}
 
 function classmodify(e) {
 	if(e.target==nextbtn){
@@ -16,7 +18,7 @@ function classmodify(e) {
                 prevbtn.disabled=false;
 
 	}
-	if(classactive==circles.length-1){
+	if(classactive==circles.length){
 		nextbtn.disabled=true;
 	}
 	if(e.target==prevbtn){
