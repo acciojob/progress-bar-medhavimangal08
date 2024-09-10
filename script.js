@@ -1,7 +1,7 @@
 //your JS code here. If required.
 
 const circles = document.querySelectorAll('.circle');
-const btn=document.querySelectorAll("button")
+const btn=document.querySelector("button")
 const nextbtn=document.querySelector("#next");
 const prevbtn=document.querySelector("#prev");
 
