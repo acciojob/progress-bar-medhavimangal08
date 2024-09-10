@@ -24,6 +24,9 @@ function classmodify(e) {
 	if(e.target==prevbtn){
 		classactive--
 		circles[classactive+1].classList.remove("active")
+		if(classactive != circles.length - 1){
+		nextbtn.disabled = false;
+	}
 	}
 	if(classactive==0){
 		prevbtn.disabled=true
