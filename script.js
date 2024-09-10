@@ -18,7 +18,7 @@ function classmodify(e) {
                 prevbtn.disabled=false;
 
 	}
-	if(classactive==circles.length){
+	if(classactive==circles.length-1){
 		nextbtn.disabled=true;
 	}
 	if(e.target==prevbtn){
